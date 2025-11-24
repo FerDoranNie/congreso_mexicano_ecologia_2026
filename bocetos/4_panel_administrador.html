@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admin Dashboard - Congreso Mexicano de Ecología 2026</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#198754",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow">
+<!-- SideNavBar -->
+<aside class="flex h-screen min-h-full flex-col justify-between border-r border-gray-200 dark:border-gray-700 bg-white dark:bg-black/20 p-4 sticky top-0 w-64">
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Admin avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBo2Djyev3ikuHAQSXySwOlmgSR3xie9cECc8Y2EcH_sLtuUssxUbmM4GpS4iEB0PUqYeskG4v999hmWCcpg7rQeJjVCcJfkJifQgrgilUZXLDr0x4M5PyAqNiSDc8pHbrAXYKA8bnXOE4-t13KDocNdmtmRJ5S65bp4OVv8XqT8fSbQ9DHdPPWgb69LLGFzxCkIheQblUvHdMiCAeLb5t5Af9jyRi9pjfKgRd2EHVG7V637tPkXn7DLV3LqjPU5jCp_qEKvau2Nb8");'></div>
+<div class="flex flex-col">
+<h1 class="text-gray-900 dark:text-white text-base font-medium leading-normal">Admin</h1>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Congreso de Ecología</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 text-primary" href="#">
+<span class="material-symbols-outlined text-primary">dashboard</span>
+<p class="text-primary text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">group</span>
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Asistentes</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">description</span>
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Ponencias</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">forum</span>
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Comunicaciones</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">settings</span>
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Ajustes</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">logout</span>
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Salir</p>
+</a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 p-6 lg:p-8">
+<div class="max-w-7xl mx-auto">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 mb-6">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight">Bienvenido, Administrador</p>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">Aquí tienes un resumen del estado actual del congreso.</p>
+</div>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-black/20 border border-gray-200 dark:border-gray-700">
+<p class="text-gray-700 dark:text-gray-300 text-base font-medium leading-normal">Total de Asistentes</p>
+<p class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">850</p>
+<p class="text-green-600 dark:text-green-400 text-sm font-medium leading-normal">+5.2%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-black/20 border border-gray-200 dark:border-gray-700">
+<p class="text-gray-700 dark:text-gray-300 text-base font-medium leading-normal">Ponencias Recibidas</p>
+<p class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">210</p>
+<p class="text-green-600 dark:text-green-400 text-sm font-medium leading-normal">+10%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-black/20 border border-gray-200 dark:border-gray-700">
+<p class="text-gray-700 dark:text-gray-300 text-base font-medium leading-normal">Ponencias Pendientes</p>
+<p class="text-gray-900 dark:text-white tracking-light text-3xl font-bold leading-tight">42</p>
+<p class="text-yellow-600 dark:text-yellow-400 text-sm font-medium leading-normal">1 por revisar</p>
+</div>
+</div>
+<!-- SectionHeader -->
+<h2 class="text-gray-900 dark:text-white text-2xl font-bold leading-tight tracking-tight mb-4">Ponencias</h2>
+<!-- SearchBar -->
+<div class="mb-4">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-white dark:bg-black/20 border-y border-l border-gray-200 dark:border-gray-700 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-700 bg-white dark:bg-black/20 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Buscar por título, autor o tema..." value=""/>
+</div>
+</label>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto bg-white dark:bg-black/20 rounded-xl border border-gray-200 dark:border-gray-700">
+<table class="w-full text-left">
+<thead class="border-b border-gray-200 dark:border-gray-700">
+<tr>
+<th class="p-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Título</th>
+<th class="p-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Autor Principal</th>
+<th class="p-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Área Temática</th>
+<th class="p-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Fecha</th>
+<th class="p-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Estado</th>
+<th class="p-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Acciones</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-200 dark:border-gray-700">
+<td class="p-4 text-sm text-gray-800 dark:text-gray-200">Impacto del cambio climático en arrecifes</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Dr. Alejandro Pérez</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Ecología Marina</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">15/07/2025</td>
+<td class="p-4"><span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/50 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">Aceptada</span></td>
+<td class="p-4"><button class="text-primary hover:underline text-sm font-medium">Ver Detalles</button></td>
+</tr>
+<tr class="border-b border-gray-200 dark:border-gray-700">
+<td class="p-4 text-sm text-gray-800 dark:text-gray-200">Nuevas estrategias de conservación en la selva</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Dra. Sofia Hernández</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Conservación</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">12/07/2025</td>
+<td class="p-4"><span class="inline-flex items-center rounded-full bg-yellow-100 dark:bg-yellow-900/50 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:text-yellow-300">Pendiente</span></td>
+<td class="p-4"><button class="text-primary hover:underline text-sm font-medium">Ver Detalles</button></td>
+</tr>
+<tr class="border-b border-gray-200 dark:border-gray-700">
+<td class="p-4 text-sm text-gray-800 dark:text-gray-200">Polinización en ecosistemas áridos</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Dr. Carlos Ramirez</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Botánica</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">10/07/2025</td>
+<td class="p-4"><span class="inline-flex items-center rounded-full bg-red-100 dark:bg-red-900/50 px-2.5 py-0.5 text-xs font-medium text-red-800 dark:text-red-300">Rechazada</span></td>
+<td class="p-4"><button class="text-primary hover:underline text-sm font-medium">Ver Detalles</button></td>
+</tr>
+<tr>
+<td class="p-4 text-sm text-gray-800 dark:text-gray-200">Modelado de nicho ecológico para especies invasoras</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">M. en C. Laura Gómez</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">Modelado Ecológico</td>
+<td class="p-4 text-sm text-gray-500 dark:text-gray-400">09/07/2025</td>
+<td class="p-4"><span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/50 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">Aceptada</span></td>
+<td class="p-4"><button class="text-primary hover:underline text-sm font-medium">Ver Detalles</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

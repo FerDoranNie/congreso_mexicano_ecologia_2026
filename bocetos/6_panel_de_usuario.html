@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - Congreso Mexicano de Ecología 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400,700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13ec13",
+              "background-light": "#f6f8f6",
+              "background-dark": "#102210",
+              "brand-green": "#2d572c",
+              "brand-accent": "#b58413",
+              "brand-text-light": "#333333",
+              "brand-text-dark": "#e0e0e0",
+              "brand-surface-light": "#ffffff",
+              "brand-surface-dark": "#1a2c1a",
+              "brand-border-light": "#f0f4f0",
+              "brand-border-dark": "#3a4c3a",
+              "brand-subtle-light": "#f0f4f0",
+              "brand-subtle-dark": "#2a3c2a",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-brand-text-light dark:text-brand-text-dark">
+<div class="flex h-screen w-full">
+<aside class="flex w-64 flex-col border-r border-brand-border-light dark:border-brand-border-dark bg-brand-surface-light dark:bg-brand-surface-dark p-4">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Profile picture of Dr. Alejandro Verde" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGjkcPz0erN_DwFhD_j7obRwrioUOPvCgCaQ8hTLryIY2C1tbeGbE8JDTIjHvazdNbVgC13RMXLPM0lqkqwbwtPZE33CxDg8BJAsk_Dut8pM-BaRqXrL9IDwOtyXaJ0ofXs--b9CXPoaLyJ0MQI1hojdmLgWhMVGnobmFzjjzjOUtkXWKUbRy5pLE4YBVBwasSksYPBOnWEyqKlrU441o9XckUS7vP0cOIkRfB1S1tahfoRDqHfJ0geqJnxIGmHABNbW2ETr0fKMs");'></div>
+<div class="flex flex-col">
+<h1 class="text-brand-text-light dark:text-brand-text-dark text-base font-medium leading-normal">Dr. Alejandro Verde</h1>
+<p class="text-brand-green dark:text-primary text-sm font-normal leading-normal">UNAM</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-brand-green/10 dark:bg-primary/20 text-brand-green dark:text-primary" href="#">
+<span class="material-symbols-outlined fill text-2xl">dashboard</span>
+<p class="text-sm font-bold leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<p class="text-sm font-medium leading-normal">Perfil</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">history_edu</span>
+<p class="text-sm font-medium leading-normal">Ponencias</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">calendar_view_month</span>
+<p class="text-sm font-medium leading-normal">Programa</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">event_available</span>
+<p class="text-sm font-medium leading-normal">Horario</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">download</span>
+<p class="text-sm font-medium leading-normal">Materiales</p>
+</a>
+</nav>
+</div>
+<div class="mt-auto flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<p class="text-sm font-medium leading-normal">Configuración</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark" href="#">
+<span class="material-symbols-outlined text-2xl">logout</span>
+<p class="text-sm font-medium leading-normal">Cerrar Sesión</p>
+</a>
+</div>
+</aside>
+<div class="flex-1 flex flex-col overflow-y-auto">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-brand-border-light dark:border-brand-border-dark px-10 py-3 bg-brand-surface-light dark:bg-brand-surface-dark sticky top-0 z-10">
+<div class="flex items-center gap-4 text-brand-green dark:text-primary">
+<span class="material-symbols-outlined text-3xl">eco</span>
+<h2 class="text-brand-text-light dark:text-brand-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Congreso Mexicano de Ecología 2026</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-brand-green dark:text-primary/80 flex border-none bg-brand-subtle-light dark:bg-brand-subtle-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-brand-text-light dark:text-brand-text-dark focus:outline-0 focus:ring-0 border-none bg-brand-subtle-light dark:bg-brand-subtle-dark focus:border-none h-full placeholder:text-brand-green/70 dark:placeholder:text-primary/60 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Buscar..." value=""/>
+</div>
+</label>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-brand-subtle-light dark:bg-brand-subtle-dark text-brand-text-light dark:text-brand-text-dark gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Profile picture of Dr. Alejandro Verde" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC93FnKY6bhnz7Rq53Pw5v9h0ejULfZ0Vgjclqhl4jn5EY0OamFa1RZoE4Du3GfU6hO0Gx8mR1u0vnXvG-rIZsX6E5mWG6EucEAKpk5fkthgIozB7IZJh7pcXcbxLkLOqxQnFoyfXRuVZm4VcITzHWiGF9m1pKdmdD2bZrNxNmgLYIeujQhEVZJNoDU546bWqQ_anNnqZx_lvj3oGcmZO0l-AWIcNWcIZW_GXMSoTahwD4cW-erWhls9PhU0oV9hpgDQhUX8vCGBGU");'></div>
+</div>
+</header>
+<main class="flex-1 p-10 space-y-8">
+<div class="flex flex-wrap justify-between gap-3">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-brand-text-light dark:text-brand-text-dark text-4xl font-black leading-tight tracking-[-0.033em]">¡Bienvenido de nuevo, Alejandro!</p>
+<p class="text-brand-green dark:text-primary/90 text-base font-normal leading-normal">Gestiona tu participación y explora el congreso desde aquí.</p>
+</div>
+<div class="flex items-center gap-3 flex-wrap justify-start">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-brand-green text-white dark:bg-primary dark:text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-brand-green/90 dark:hover:bg-primary/90">
+<span class="truncate">Enviar una Ponencia</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-brand-subtle-light dark:bg-brand-subtle-dark text-brand-text-light dark:text-brand-text-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-brand-border-light dark:hover:bg-brand-border-dark">
+<span class="truncate">Ver Programa Completo</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<h2 class="text-brand-text-light dark:text-brand-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em]">Resumen de tu Actividad</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-4 rounded-xl p-6 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 rounded-lg bg-brand-green/10 dark:bg-primary/20">
+</div>
+<h3 class="text-lg font-bold">Ponencias</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center text-sm">
+<p>Ponencia #1</p>
+<span class="font-medium text-green-600 dark:text-green-400">Aceptada</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Ponencia #2</p>
+<span class="font-medium text-yellow-600 dark:text-yellow-400">En Revisión</span>
+</div>
+</div>
+<a class="text-sm font-bold text-brand-green dark:text-primary mt-4 hover:underline" href="#">Ver todas mis ponencias →</a>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-6 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 rounded-lg bg-brand-green/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-2xl text-brand-green dark:text-primary">event</span>
+</div>
+<h3 class="text-lg font-bold">Próximas Sesiones</h3>
+</div>
+<div class="space-y-3">
+<div class="flex flex-col text-sm">
+<p class="font-medium">Mesa Redonda: Ecología Urbana</p>
+<p class="text-brand-green/80 dark:text-primary/80">Hoy, 14:00 - Auditorio Principal</p>
+</div>
+<div class="flex flex-col text-sm">
+<p class="font-medium">Keynote: Dra. Elena Ríos</p>
+<p class="text-brand-green/80 dark:text-primary/80">Mañana, 09:00 - Auditorio Principal</p>
+</div>
+</div>
+<a class="text-sm font-bold text-brand-green dark:text-primary mt-2 hover:underline" href="#">Ir a mi horario →</a>
+</div>
+</div>
+<div>
+<h2 class="text-brand-text-light dark:text-brand-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Materiales</h2>
+<div class="rounded-xl border border-brand-border-light dark:border-brand-border-dark overflow-hidden bg-brand-surface-light dark:bg-brand-surface-dark">
+<ul class="divide-y divide-brand-border-light dark:divide-brand-border-dark">
+<li class="flex items-center justify-between p-4 gap-4 hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark transition-colors">
+<div class="flex items-center gap-4 flex-1 min-w-0">
+<span class="material-symbols-outlined text-brand-accent">description</span>
+<div class="flex-1 min-w-0">
+<p class="font-medium truncate">Programa Completo.pdf</p>
+</div>
+</div>
+<button class="flex items-center justify-center rounded-lg size-9 hover:bg-brand-border-light dark:hover:bg-brand-border-dark shrink-0">
+<span class="material-symbols-outlined text-2xl">download</span>
+</button>
+</li>
+<li class="flex items-center justify-between p-4 gap-4 hover:bg-brand-subtle-light dark:hover:bg-brand-subtle-dark transition-colors">
+<div class="flex items-center gap-4 flex-1 min-w-0">
+<span class="material-symbols-outlined text-brand-accent">description</span>
+<div class="flex-1 min-w-0">
+<p class="font-medium truncate">Libro de Resúmenes.pdf</p>
+</div>
+</div>
+<button class="flex items-center justify-center rounded-lg size-9 hover:bg-brand-border-light dark:hover:bg-brand-border-dark shrink-0">
+<span class="material-symbols-outlined text-2xl">download</span>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="flex flex-col items-center gap-4 rounded-xl p-6 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark text-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-20" data-alt="Profile picture of Dr. Alejandro Verde" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoCXDR0aOaYtIdYb4j3JY7xKq9QxVnSEbKIGX0iF2GXblhICVvMokyaCx4BvYhGHZFUVUZmBOS9H94kFd3sXN9gs97eUFIuyiRlkZfGxI3RMKfWPjr_tc7mHGRNpBcXRBIOpMP7RaLO_Ru52vAs1CHXOmjK51g6-i11LXchodJK1EQLLbzuUG6OHulUA7aoXF-00y4sEUOGaXQ9WZDg_2wyC6m5KknWfBEgV2FpgY46gLZe6yZT2_BgnWlCatfKpNyt5hauViHDao");'></div>
+<div class="flex flex-col">
+<h3 class="text-lg font-bold">Dr. Alejandro Verde</h3>
+<p class="text-sm text-brand-green/90 dark:text-primary/90">Universidad Nacional Autónoma de México</p>
+</div>
+<span class="inline-flex items-center rounded-full bg-brand-green/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-brand-green dark:text-primary">Ponente Confirmado</span>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-6 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark">
+<h3 class="text-lg font-bold">Fechas Clave</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-0.5 text-lg">event_upcoming</span>
+<div>
+<p class="font-medium text-sm">Cierre de registro temprano</p>
+<p class="text-xs text-brand-green/80 dark:text-primary/80">31 de Diciembre, 2025</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-0.5 text-lg">event_upcoming</span>
+<div>
+<p class="font-medium text-sm">Envío de versión final de ponencia</p>
+<p class="text-xs text-brand-green/80 dark:text-primary/80">15 de Enero, 2026</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-0.5 text-lg">event_upcoming</span>
+<div>
+<p class="font-medium text-sm">Inicio del Congreso</p>
+<p class="text-xs text-brand-green/80 dark:text-primary/80">22 de Febrero, 2026</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

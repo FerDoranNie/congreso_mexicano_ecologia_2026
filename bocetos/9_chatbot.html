@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Asistente Virtual - CME 2026</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    @layer base {
+      :root {
+        --primary-light: 198 48% 60%;
+        --primary: 198 56% 40%;
+        --primary-dark: 198 56% 25%;
+        --secondary: 132 46% 45%;
+        --background-light: 120 14% 97%;
+        --background-dark: 132 24% 12%;
+        --text-light: 132 10% 20%;
+        --text-dark: 120 14% 90%;
+      }
+      .dark:root {
+        --primary-light: 198 56% 25%;
+        --primary: 198 56% 40%;
+        --primary-dark: 198 48% 60%;
+      }
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "hsl(var(--primary))",
+            "primary-light": "hsl(var(--primary-light))",
+            "primary-dark": "hsl(var(--primary-dark))",
+            secondary: "hsl(var(--secondary))",
+            "background-light": "hsl(var(--background-light))",
+            "background-dark": "hsl(var(--background-dark))",
+            "text-light": "hsl(var(--text-light))",
+            "text-dark": "hsl(var(--text-dark))",
+          },
+          fontFamily: {
+            display: ["Montserrat", "sans-serif"],
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' o,
+      'opsz' 24
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white font-display dark:bg-black">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7KjaUBSsaWRJq9_AxZItGp8CBtUouDznggn1RunxdUgXxt3v1d6OBVPN2Zzx621GT2PDRTlva-H_7LFI7yHfVhZBJiTBY2UZoxeHY0rGN-ko2FPL4fMhARDYT5FNBYnbmk5k554kZCGX6Z6eBef_SEbXClt54PfdHif44s1pzY4TjAjqGw5ptGtDKG2IN67vjVQEoyetqCe9PGPDObBVcsuNzm_6X8A-W44MB1rVqm_163AC5ZlMrBW7b03EweJE6XHg-OZgsMuI"); background-size: cover; background-position: center;'>
+<div class="fixed bottom-8 right-8 flex flex-col items-end gap-4">
+<div class="flex h-[70vh] max-h-[700px] w-96 flex-col overflow-hidden rounded-xl border border-black/10 bg-background-light/90 shadow-2xl backdrop-blur-sm dark:border-white/10 dark:bg-background-dark/90">
+<div class="flex items-center justify-between border-b border-black/10 px-4 py-3 dark:border-white/10">
+<h3 class="font-display text-lg font-bold tracking-tight text-text-light dark:text-text-dark">Asistente Virtual CME 2026</h3>
+<button class="flex h-8 w-8 items-center justify-center rounded-full text-text-light hover:bg-black/5 dark:text-text-dark dark:hover:bg-white/5">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="flex-1 space-y-4 overflow-y-auto p-4">
+<div class="flex items-end gap-3 p-0">
+<div class="aspect-square w-10 shrink-0 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Abstract green leaf pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKgYFl2GDX_kaAV3SH7VHHNTC3B21P--u7Z94uXwD0ZX-29gF_gN4WaxzkshW6-IIloeS_71-5xdvMV-FM8P91yuex6_zvM6JjVq8dTbm5rxQdzDg_-Qc0xfcm46ETlf43dUVTD0UgbqGr96PzR6hBkQZZUJEBDY4WbATOrpf-Q8Nu7a5HGkImnZqZduMVrLxkBBgwhwgS4CiWkk9Q-rjltGfPSVNZd7UeXgTrGDovqGaKj2XjwuSnO2GFiwmGQYTvH3vOFfZERto");'></div>
+<div class="flex flex-1 flex-col items-start gap-1.5">
+<p class="max-w-[360px] text-xs font-medium text-gray-500 dark:text-gray-400">Asistente Virtual</p>
+<p class="max-w-[360px] rounded-lg rounded-bl-none bg-white px-4 py-2.5 text-sm font-normal leading-relaxed text-text-light dark:bg-gray-800 dark:text-text-dark">¡Hola! Bienvenido al Congreso Mexicano de Ecología 2026. ¿Cómo puedo ayudarte hoy?</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 py-2 pl-12">
+<button class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full border border-secondary/50 bg-transparent px-3 text-sm font-medium text-secondary transition-colors hover:bg-secondary/10 dark:hover:bg-secondary/20">Horarios</button>
+<button class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full border border-secondary/50 bg-transparent px-3 text-sm font-medium text-secondary transition-colors hover:bg-secondary/10 dark:hover:bg-secondary/20">Ubicación</button>
+<button class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full border border-secondary/50 bg-transparent px-3 text-sm font-medium text-secondary transition-colors hover:bg-secondary/10 dark:hover:bg-secondary/20">Registro</button>
+</div>
+<div class="flex items-end justify-end gap-3 p-0">
+<div class="flex flex-1 flex-col items-end gap-1.5">
+<p class="max-w-[360px] text-right text-xs font-medium text-gray-500 dark:text-gray-400">Tú</p>
+<p class="flex max-w-[360px] rounded-lg rounded-br-none bg-primary px-4 py-2.5 text-sm font-normal leading-relaxed text-white">¿Dónde es la ubicación del congreso?</p>
+</div>
+<div class="aspect-square w-10 shrink-0 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Abstract gradient of blue and green" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhg5GB7yDQXXgdwmOoSnf7ktkE-sPNDf2Ld2x4RPNEPwPvJHJie98Rk_Os6nMfSvDWTR1rS3eKqMZ0bcHQ4yGTRN06qkCqjl2ldpWa_2TegmYZMpFHtAWvx2LXoGmGtqbSmOO4UoL5aEIj9HhpEDsTIU1Xk4wetBSdKF0f2JR8ZIISPZ76CU7YCZDZ1HTVl_bobt2YO36jQJxnP04SjeeVqJDxDIRaGZpiCqKqDv0VF4gpoCXzmi0dAQwVwF7oermE4TdJm2Nno2o");'></div>
+</div>
+<div class="flex items-end gap-3 p-0">
+<div class="aspect-square w-10 shrink-0 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Abstract green leaf pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDauq_nF-QTbldyXE-3N1a1eBIRUb2MHM5G3rhw7DGzrYUC-lLFIbsjv47J5L0rYW5kR6SdV9OygxrJMXPFZsrQU2bhDdA8CSTf3VhVhwVwcRMPesNBipsOxiV7NWCcg-4XP4VerVLvIvbHE5_fwMRwPkrPKG8hjjhi0mU9AlW3h9-6wPYKwgAMgh2u0LSZ6hYqPB27CgZWbDweo8tcoQlJEzBM6Uzgq6NJbROSvCnxPaI5aqwISzwoGw962ieGp2z0RvsJEhYuS1U");'></div>
+<div class="flex flex-1 flex-col items-start gap-1">
+<div class="flex max-w-[360px] rounded-lg rounded-bl-none bg-white px-4 py-3 text-base font-normal leading-normal text-text-light dark:bg-gray-800 dark:text-text-dark">
+<div class="flex items-center gap-2">
+<span class="h-1.5 w-1.5 animate-[pulse_1.5s_cubic-bezier(0.4,0,0.6,1)_infinite] rounded-full bg-gray-400 dark:bg-gray-500"></span>
+<span class="h-1.5 w-1.5 animate-[pulse_1.5s_cubic-bezier(0.4,0,0.6,1)_infinite_0.2s] rounded-full bg-gray-400 dark:bg-gray-500"></span>
+<span class="h-1.5 w-1.5 animate-[pulse_1.5s_cubic-bezier(0.4,0,0.6,1)_infinite_0.4s] rounded-full bg-gray-400 dark:bg-gray-500"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 rounded-lg border border-yellow-500/50 bg-yellow-400/20 p-3 dark:bg-yellow-500/10">
+<span class="material-symbols-outlined text-yellow-600 dark:text-yellow-400">campaign</span>
+<p class="flex-1 text-sm font-medium text-yellow-800 dark:text-yellow-200">¡La ponencia 'Ecosistemas Marinos' comienza en 15 minutos en el Auditorio Principal!</p>
+</div>
+</div>
+<div class="flex items-center gap-3 border-t border-black/10 p-4 dark:border-white/10">
+<input class="flex-1 rounded-full border-gray-300 bg-white px-4 py-2 text-sm text-text-light placeholder-gray-500 focus:border-secondary focus:ring-secondary dark:border-gray-600 dark:bg-gray-800 dark:text-text-dark dark:placeholder-gray-400" placeholder="Escribe tu pregunta..." type="text"/>
+<button class="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-secondary text-white transition-transform active:scale-95">
+<span class="material-symbols-outlined text-lg">send</span>
+</button>
+</div>
+</div>
+<button class="group flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-secondary text-white shadow-lg transition-transform active:scale-95">
+<span class="material-symbols-outlined text-3xl transition-transform group-hover:rotate-12">support_agent</span>
+<span class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">1</span>
+</button>
+</div>
+</div>
+
+</body></html>
